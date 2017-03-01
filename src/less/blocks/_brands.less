@@ -16,7 +16,7 @@
 
   &::after {
     content: '';
-    display: block;
+    display: none;
     width: 30px;
     min-width: 30px;
     height: 30px;
@@ -45,5 +45,14 @@
   
   &:hover {
     background-color: @color-red-50;
+  }
+}
+
+
+@media (max-width: 960px) {
+  .brands__inner {
+    &:after {
+      display: block;
+    }
   }
 }
