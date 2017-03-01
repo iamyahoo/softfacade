@@ -9,9 +9,20 @@
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
+  position: relative;
+  justify-content: space-between;
   min-height: 300px;
   overflow-x: auto;
-  justify-content: space-between;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    position: relative;
+    background-color: transparent;
+  }
 }
 
 .brands__item {
