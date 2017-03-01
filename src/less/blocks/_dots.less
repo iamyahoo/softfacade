@@ -1,0 +1,41 @@
+.dots {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin-right: 30px;
+    
+    &.slick-active {
+      
+      button {
+        background-color: @color-red-30;
+        border-color: @color-red-30;
+      }
+    }
+  }
+
+  button {
+    display: block;
+    padding: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 10px;
+    border: 2px solid @color-beige-50;
+    text-indent: -9999px;
+    background-color: #fff;
+    outline: none;
+    
+    &:hover {
+      background-color: @color-beige-50;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+
+  button {
+    border-color: #c2ac98;
+  }
+}

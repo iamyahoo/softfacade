@@ -1,0 +1,62 @@
+.loyalty {
+  padding: 60px 0;
+  background-color: @color-red-30;
+  color: #fff;
+}
+
+.loyalty__inner {
+  .layout-inner;
+  .layout-padding;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.loyalty__desc {
+  max-width: 520px;
+}
+
+.loyalty__card {
+  position: absolute;
+  width: 340px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: auto;
+  padding: 20px 30px;
+  right: 30px;
+  bottom: 0;
+}
+
+.loyalty__text {
+  margin-bottom: 50px;
+}
+
+
+@media (max-width: 960px) {
+
+  .loyalty__inner {
+    flex-direction: column;
+
+    .btn_big {
+      width: 100%;
+    }
+  }
+
+  .loyalty__desc {}
+
+  .loyalty__card {
+    height: 300px;
+    margin-bottom: 40px;
+    position: static;
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .loyalty__card {
+    height: 240px;
+  }
+}

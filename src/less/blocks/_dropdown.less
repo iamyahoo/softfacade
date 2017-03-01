@@ -1,0 +1,53 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdown_geo {}
+
+.dropdown__btn {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  padding: 0 20px;
+  outline-color: @color-red-50;
+
+  &:before {
+    position: absolute;
+    display: inline-block;
+    content: url('../img/icon/icon-mark.png');
+    top: 2px;
+    left: 0;
+  }
+
+  &:after {
+    position: absolute;
+    top: 30%;
+    right: 2px;
+    display: inline-block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid @color-red-10;
+    border-bottom: 2px solid @color-red-10;
+    transform: rotate(-45deg);
+  }
+
+}
+
+.dropdown__list {
+  display: none;
+  position: absolute;
+  background-color: @color-red-50;
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+  top: 110%;
+  border: 1px solid @color-red-10;
+  border-radius: 5px;
+  z-index: 5;
+
+  li {
+    padding: 3px 0;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,50 @@
+.shops {
+  padding: 80px 0;
+  background-color: @color-green-50;
+  background-image: url('../img/content/map.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 300px;
+  color: #fff;
+}
+
+.shops__inner {
+  .layout-inner;
+  .layout-padding;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shops__info {
+  display: flex;
+}
+
+.shops__mark {
+  align-self: center;
+  flex: 0 0 auto;
+  margin-right: 30px;
+}
+
+.shops__count {
+  font-size: 120px;
+  line-height: 1;
+  font-family: @font-family_2_bold;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+.shops__text {
+  font-size: 24px;
+  color: @color-gold-50;
+  font-family: @font-family_medium;
+}
+
+@media (max-width: 520px) {
+
+  .shops__count {
+    font-size: 100px;
+    margin-top: 0;
+  }
+
+}

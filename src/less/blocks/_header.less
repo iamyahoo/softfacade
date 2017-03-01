@@ -1,0 +1,167 @@
+.header {
+
+  & .search {
+    margin-right: 30px;
+  }
+}
+
+.header__inner {
+  .layout-padding;
+  .layout-inner;
+  display: flex;
+  align-items: center;
+}
+
+.header__top {
+  background-color: @color-red-50;
+  color: @color-red-10;
+  font-family: @font-family_medium;
+  font-size: 16px;
+  
+  a {
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.header__bottom {
+  padding: 15px 0;
+  background-color: @color-red-30;
+  font-family: @font-family_demi;
+}
+
+.header__start {
+  min-width: 18%;
+}
+
+.header__end {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header__tel {
+  font-family: @font-family_demi;
+  font-size: 18px;
+
+  .link {
+    color: @color-red-10;
+
+    &:hover {
+      
+    }
+  }
+}
+
+.header__menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+  color: #fff;
+
+  li:last-child {
+    a {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 30px;
+
+    &:hover {
+      color: @color-red-10;
+    }
+  }
+}
+
+
+@media (max-width: 1023px) {
+
+  .header {
+
+    & .logo {
+      margin-right: 30px;
+    }
+  }
+
+  .header__inner {
+    flex-wrap: wrap;
+  }
+
+  .header__top {
+    display: none;
+  }
+
+  .header__start {
+    order: 1;
+  }
+
+  .header__end {
+    order: 2;
+  }
+
+  .header__menu {
+    order: 3;
+    width: 100%;
+    margin-top: 10px;
+
+    a {
+      //font-size: 18px;
+      margin-right: 20px;
+    }
+  }
+
+  .header__login {
+    display: none;
+  }
+}
+
+
+@media (max-width: 640px) {
+
+  .header__menu {
+    justify-content: space-between;
+
+    a {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+
+  .header__menu {
+
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+
+  .header {
+
+    & .logo {
+      margin-right: 0;
+    }
+
+    .header__search {
+      margin-right: 10px;
+    }
+  }
+
+  .header__menu {
+
+    a {
+      font-size: 16px;
+    }
+  }
+}

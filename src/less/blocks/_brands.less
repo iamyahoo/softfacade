@@ -1,0 +1,38 @@
+.brands {
+  background-color: #fff;
+}
+
+.brands__inner {
+  .layout-padding;
+  .layout-inner;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  min-height: 300px;
+  overflow-x: auto;
+  justify-content: space-between;
+}
+
+.brands__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25px;
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  background-color: @color-gray-30;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 28px;
+}
+
+.brands__btn {
+  text-decoration: none;
+  background-color: @color-red-30;
+  
+  &:hover {
+    background-color: @color-red-50;
+  }
+}
