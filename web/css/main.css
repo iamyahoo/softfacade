@@ -961,6 +961,9 @@ button {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: baseline;
+	-ms-flex-align: baseline;
+	align-items: baseline;
 }
 
 .recipes__title {
@@ -2183,6 +2186,10 @@ button {
 }
 
 @media (max-width: 520px) {
+
+.recipes__title {
+	font-size: 24px;
+}
 
 .shops__count {
 	margin-top: 0;
